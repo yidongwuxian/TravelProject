@@ -154,6 +154,13 @@ const AppView = createAppContainer(
               header: null
           }
       },
+      SearchPage: {
+          screen: SearchPage,
+          navigationOptions: {
+              gesturesEnabled: true,
+              header: null
+          }
+      },
       IndexPage: {
           screen: IndexPage,
           navigationOptions: {
