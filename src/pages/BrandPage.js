@@ -6,13 +6,13 @@ import {
 } from 'react-native';
 
 type Props = {};
-export default class IndexPage extends Component<Props> {
+export default class BrandPage extends Component<Props> {
 
     render() {
         return ( // 渲染布局
             <View style={styles.container}>
                 <StatusBar barStyle={'dark-content'} backgroundColor={'#fff'}/>
-                <Text style={{margin:10,fontSize:20,color:'black'}}>首页</Text>
+                <Text style={{margin:10,fontSize:20,color:'black'}}>品牌</Text>
             </View>
         );
     }
