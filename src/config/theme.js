@@ -1,12 +1,13 @@
 'use strict';
 
-import {Dimensions, Platform} from 'react-native';
+import {Dimensions, Platform, PixelRatio} from 'react-native';
 export default module = {
     screenWidth: Dimensions.get('window').width,
     screenHeight: Dimensions.get('window').height,
+    onePixel: 1 / PixelRatio.get(),
     btnActiveOpacity: 0.5,
     actionBar: {
-        height: 44, //Platform.OS === 'android' ? 56 : 44 //根据不通平台高度不一致
+        height: (Platform.OS === 'android' ? 56 : 44 ),
         backgroundColor: '#fff'
     },
     barContentPad: (Platform.OS === 'android' ? 0 : (isIphoneX() ? 42 : 20)),
